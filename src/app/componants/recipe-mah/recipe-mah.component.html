@@ -1,0 +1,26 @@
+<div
+  class="bg-gradient-to-b from-black to-gray-900 justify-items-stretch content-center grid grid-flow-rows p-12 grid-cols-1 gap-y-2 md:gap-x-12 md:grid-cols-3"
+>
+  <div
+    *ngFor="let card of cards$"
+    class="justify-self-auto border-transparent p-0 text-3xl text-center overflow-hidden rounded-lg hover:scale-105 hover:duration-300"
+  >
+    <div
+      class="h-full block max-w-fit rounded-lg bg-white shadow-lg dark:bg-neutral-700"
+    >
+      <a data-te-ripple-init data-te-ripple-color="light">
+        <img class="rounded-t-lg" [src]="card.img" alt="" />
+      </a>
+      <div class="p-6">
+        <h5
+          class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50"
+        >
+          {{ card.title }}
+        </h5>
+        <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          {{ card.desc }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

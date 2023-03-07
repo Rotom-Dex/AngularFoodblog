@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "foodblog-53dee": {
+      "hosting": {
+        "Food-Blog": [
+          "foodblog-53dee"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "myfirstproject-6af18"
+  }
+}
